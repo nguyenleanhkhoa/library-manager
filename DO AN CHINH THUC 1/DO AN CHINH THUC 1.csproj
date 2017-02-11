@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B97D64E5-7225-4826-9876-103C34A307ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DO_AN_CHINH_THUC_1</RootNamespace>
+    <AssemblyName>DO AN CHINH THUC 1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCao.cs">
+      <DependentUpon>BaoCao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCao.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CSDL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CSDL.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FABOUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FABOUT.Designer.cs">
+      <DependentUpon>FABOUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBAOCAO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBAOCAO.Designer.cs">
+      <DependentUpon>FBAOCAO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCHITIETPHIEUMUON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCHITIETPHIEUMUON.Designer.cs">
+      <DependentUpon>FCHITIETPHIEUMUON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDANGKY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDANGKY.Designer.cs">
+      <DependentUpon>FDANGKY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDANGNHAP1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDANGNHAP1.Designer.cs">
+      <DependentUpon>FDANGNHAP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDANHSACHMUONTRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDANHSACHMUONTRA.Designer.cs">
+      <DependentUpon>FDANHSACHMUONTRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMUONSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMUONSACH.Designer.cs">
+      <DependentUpon>FMUONSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQUANLYSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQUANLYSACH.Designer.cs">
+      <DependentUpon>FQUANLYSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQUANLYTHANHVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQUANLYTHANHVIEN.Designer.cs">
+      <DependentUpon>FQUANLYTHANHVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSACH.Designer.cs">
+      <DependentUpon>FSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTHETHUVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTHETHUVIEN.Designer.cs">
+      <DependentUpon>FTHETHUVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTACGIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTACGIA.Designer.cs">
+      <DependentUpon>FTACGIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTHELOAI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTHELOAI.Designer.cs">
+      <DependentUpon>FTHELOAI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTRASACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTRASACH.Designer.cs">
+      <DependentUpon>FTRASACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTHUVIENCHINHTHUCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUVIENCHINHTHUCDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUVIENCHINHTHUCDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUVIENCHINHTHUCDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUVIENDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUVIENDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTHUVIENDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTHUVIENDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TRANGCHU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANGCHU.Designer.cs">
+      <DependentUpon>TRANGCHU.cs</DependentUpon>
+    </Compile>
+    <None Include="BaoCao.xsc">
+      <DependentUpon>BaoCao.xsd</DependentUpon>
+    </None>
+    <None Include="BaoCao.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaoCao.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BaoCao.xss">
+      <DependentUpon>BaoCao.xsd</DependentUpon>
+    </None>
+    <None Include="CSDL.dbml.layout">
+      <DependentUpon>CSDL.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FABOUT.resx">
+      <DependentUpon>FABOUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBAOCAO.resx">
+      <DependentUpon>FBAOCAO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCHITIETPHIEUMUON.resx">
+      <DependentUpon>FCHITIETPHIEUMUON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDANGKY.resx">
+      <DependentUpon>FDANGKY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDANGNHAP1.resx">
+      <DependentUpon>FDANGNHAP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDANHSACHMUONTRA.resx">
+      <DependentUpon>FDANHSACHMUONTRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMUONSACH.resx">
+      <DependentUpon>FMUONSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQUANLYSACH.resx">
+      <DependentUpon>FQUANLYSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQUANLYTHANHVIEN.resx">
+      <DependentUpon>FQUANLYTHANHVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSACH.resx">
+      <DependentUpon>FSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTACGIA.resx">
+      <DependentUpon>FTACGIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTHETHUVIEN.resx">
+      <DependentUpon>FTHETHUVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTHELOAI.resx">
+      <DependentUpon>FTHELOAI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTRASACH.resx">
+      <DependentUpon>FTRASACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="TRANGCHU.resx">
+      <DependentUpon>TRANGCHU.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CSDL.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CSDL.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLTHUVIENCHINHTHUCDataSet.xsc">
+      <DependentUpon>QLTHUVIENCHINHTHUCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUVIENCHINHTHUCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUVIENCHINHTHUCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUVIENCHINHTHUCDataSet.xss">
+      <DependentUpon>QLTHUVIENCHINHTHUCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUVIENCHINHTHUCDataSet1.xsc">
+      <DependentUpon>QLTHUVIENCHINHTHUCDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUVIENCHINHTHUCDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUVIENCHINHTHUCDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUVIENCHINHTHUCDataSet1.xss">
+      <DependentUpon>QLTHUVIENCHINHTHUCDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUVIENDataSet.xsc">
+      <DependentUpon>QLTHUVIENDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUVIENDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUVIENDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUVIENDataSet.xss">
+      <DependentUpon>QLTHUVIENDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUVIENDataSet1.xsc">
+      <DependentUpon>QLTHUVIENDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLTHUVIENDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTHUVIENDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTHUVIENDataSet1.xss">
+      <DependentUpon>QLTHUVIENDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="REPORT.xsc">
+      <DependentUpon>REPORT.xsd</DependentUpon>
+    </None>
+    <None Include="REPORT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>REPORT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="REPORT.xss">
+      <DependentUpon>REPORT.xsd</DependentUpon>
+    </None>
+    <None Include="ReportTest.xsc">
+      <DependentUpon>ReportTest.xsd</DependentUpon>
+    </None>
+    <None Include="ReportTest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportTest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportTest.xss">
+      <DependentUpon>ReportTest.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\checkmark-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account and Control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5118.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_book1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inkwell_icon_-_Noun_Project_2512.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-Book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_book11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inkwell_icon_-_Noun_Project_2512.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrow-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_book12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rising-trend-chart-icon-70391.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1480883559_User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f58e92ca554f4a44b13d6842bd389b2f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account and Control1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
